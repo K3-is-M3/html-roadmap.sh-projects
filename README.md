@@ -5,5 +5,6 @@ This repository contains projects completed as part of the Frontend Developer pa
 ## Projects
 
 - [Single Page CV](https://roadmap.sh/projects/single-page-cv) — A simple single-page curriculum vitae built with HTML.
+- [Basic HTML Website](https://roadmap.sh/projects/basic-html-website) — A basic Portfolio website built with HTML.
 
 Feel free to open issues or submit pull requests if you'd like to suggest improvements or add more projects. 
