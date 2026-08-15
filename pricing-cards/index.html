@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pricing cards using HTML and CSS">
+    <meta name="author" content="Kelvin Wachira">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pricing Cards</title>
+</head>
+
+
+<!-- AI assisted additions; added div class pricing-wrapper to wrap all pricing cards, and also
+added popular badge div in the pro card. Everything else written by me. 
+I'm in beginner mode tho, but ts kinda easy fr,,imma get it on lock in no time haha-->
+<body>
+    <main>
+        <div class="pricing-wrapper">
+            <div class="pricing basic">
+                <h2 class="plan-name">Basic</h2>
+                <p class="price"><span style="font-size: 60px;">$9</span>/mo</p>
+                <p class="plan-description">Essential features to get started.</p>
+                <hr>
+                <ul class="custom-list">
+                    <li>1 user</li>
+                    <li>5 projects</li>
+                    <li>10 GB Storage</li>
+                    <li>Email Support</li>
+                    <li>Basic Reports</li>
+                </ul>
+                <button type="submit" class="button">Choose Basic</button>
+            </div>
+
+            <div class="pricing pro">
+                <div class="popular-badge">Most popular</div>
+                <h2 class="plan-name">Pro</h2>
+                <p class="price"><span style="font-size: 60px; color: red;">$19</span>/mo</p>
+                <p class="plan-description">Advanced tools for growing teams.</p>
+                <hr>
+                <ul class="custom-list">
+                    <li>5 users</li>
+                    <li>50 projects</li>
+                    <li>100 GB Storage</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Reports</li>
+                </ul>
+                <button type="submit" class="button" style="background-color: red; color: white;">Choose Pro</button>
+            </div>
+
+            <div class="pricing business">
+                <h2 class="plan-name">Business</h2>
+                <p class="price"><span style="font-size: 60px;">$49</span>/mo</p>
+                <p class="plan-description">Complete solution for large organizations.</p>
+                <hr>
+                <ul class="custom-list">
+                    <li>Unlimited users</li>
+                    <li>Unlimited projects</li>
+                    <li>1 TB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Custom Reports</li>
+                </ul>
+                <button type="submit" class="button">Choose Business</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

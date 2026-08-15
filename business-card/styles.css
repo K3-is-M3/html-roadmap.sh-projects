@@ -1,0 +1,52 @@
+body {
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+}
+
+.business-card {
+    width: 300px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.profile-image {
+    height:150px;
+    width: 150px;
+    max-width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    gap: 20px;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+}
+
+.portfolio-link:link {
+    color: blue;
+}
+
+.portfolio-link:active {
+    color: black;
+}
+
+.linkedin:hover {
+    color: blue;
+}
+
+
+

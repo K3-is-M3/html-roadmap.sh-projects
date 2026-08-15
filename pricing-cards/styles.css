@@ -1,0 +1,114 @@
+/* AI corrections made for main styling, 
+additions on pricing-wrapper and popular-badge since 
+i didnt know how to add those, will double back, read and practise 
+harder. Otherwise everything else written by me, and I love it*/
+
+body {
+    background-color:azure;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Flex container to hold and center everything on screen */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pricing-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 40px 20px;
+    max-width: 100%;
+}
+
+.pricing {
+    width: 220px;
+    height: 450px;
+    flex-shrink: 0; /* CRITICAL: Prevents your cards from squeezing/shrinking */
+    border: 2px solid black;
+    border-radius: 12px;
+    position: relative; /* CRITICAL: Acts as the structural anchor for the absolute badge */
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.pro {
+    border: 2px solid red;
+    box-shadow: 0px 4px 5px grey;
+    transition: 
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+    box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.pro:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the badge horizontally and halfway vertically on the border line */
+    background-color: red;
+    color: white;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.plan-name {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.price {
+    text-align: center;
+    font-size: 24px;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.plan-description {
+    text-align: center;
+    font-size: 18px;
+    margin-top: -12px;
+}
+
+hr {
+    width:80%;
+    height:2px;
+    background-color: black;
+}
+
+.custom-list li::marker{
+    content: "\f058";
+    font-family: 'Font Awesome 6 Free';
+}
+
+.custom-list li {
+    padding: 7px;
+}
+
+button {
+    height: 30px;
+    width: 60%;
+    border-radius: 5px;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 40px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
