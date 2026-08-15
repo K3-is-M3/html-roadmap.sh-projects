@@ -1,40 +1,6 @@
 body {
-    background-color: bisque;
-}
-
-h1 {
+    background-color: lightgrey;
     display: flex;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.navbar {
-    display: flexbox;
-    justify-content: center;
-    list-style: disc;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.audio-card{
-    background-color: grayS;
-}
-
-.video-topic {
-    display: flex;
-    justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-video {
-    display: flexbox;
-    justify-content: center;
-    margin-left: 250px;
+    align-items: center;
 }
