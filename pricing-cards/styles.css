@@ -93,8 +93,9 @@ hr {
 }
 
 .custom-list li::marker{
-    content: "\f058";
+    list-style-image: url(https://fontawesome.com/icons/classic/solid/circle-check);
     font-family: 'Font Awesome 6 Free';
+    
 }
 
 .custom-list li {

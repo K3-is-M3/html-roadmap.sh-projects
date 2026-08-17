@@ -1,6 +1,129 @@
+/* ==========================================================================
+   1. Design Tokens & Reset
+   ========================================================================== */
+:root {
+  --bg-primary: #0f172a;       /* Deep slate background */
+  --bg-surface: #1e293b;       /* Slightly lighter card background */
+  --accent: #38bdf8;           /* Elegant sky blue for links/actions */
+  --text-main: #f8fafc;        /* Off-white for high readability */
+  --text-muted: #94a3b8;       /* Muted gray for transcripts/subtitles */
+  --radius: 12px;              /* Smooth, elegant corner rounding */
+  --transition: all 0.3s ease; /* Fluid hover states */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: lightgrey;
-    display: flex;
-    justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* ==========================================================================
+   2. Layout & Header
+   ========================================================================== */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  background: linear-gradient(to right, #fff, var(--text-muted));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links li:first-child a { /* Highlights active "Playing" link */
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   3. Content Sections & Components
+   ========================================================================== */
+section {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+
+/* Audio Player Component */
+.audio-card {
+  display: flex;
+  align-items: center;
+}
+
+audio {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+/* Video Player Component */
+video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Transcript Styling */
+p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+/* ==========================================================================
+   4. Media Queries for Responsiveness
+   ========================================================================== */
+@media (min-width: 640px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+  }
 }
